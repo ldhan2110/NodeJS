@@ -25,4 +25,4 @@ jobs:
       run: docker build . --file Dockerfile ldhan211099/node-app:1.4
 
     - name: Docker Pushing Image to Docker Hub
-      run: docker build . --file Dockerfile ldhan211099/node-app:1.4
+      run: docker push ldhan211099/node-app:1.4
