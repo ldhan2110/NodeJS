@@ -1,7 +1,3 @@
-
-
-
-
 const express = require("express");
 const thingRouter = require("./thingRoute");
 const bodyParser = require("body-parser");
