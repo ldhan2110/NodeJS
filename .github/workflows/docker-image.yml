@@ -22,7 +22,7 @@ jobs:
       run: docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
       
     - name: Docker Build Image
-      run: docker build -f . ldhan211099/node-app:1.4
+      run: docker build -t ldhan211099/node-app:1.4 -f .
 
     - name: Docker Pushing Image to Docker Hub
       run: docker push ldhan211099/node-app:1.4
