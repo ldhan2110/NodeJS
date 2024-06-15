@@ -8,16 +8,6 @@ const port = process.env.PORT;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-//Connect DB
-// mongoose.connect("mongodb://admin:admin@mongo:27017")
-//     .then(() => {
-//         console.log('Database connection successful')
-//     })
-//     .catch(err => {
-//         console.log(err);
-//         console.error('Database connection error')
-//     })
-
 //Define Schema
 const UserModel = mongoose.model('User', new mongoose.Schema({
     email: String,
